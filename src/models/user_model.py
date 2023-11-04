@@ -4,7 +4,7 @@ import re
 class User:
     street_address_pattern = r'^\d+\s+\w+\s+\w+,\s+\w+,\s+\w+\s+\d+\d+$'
 
-    def __init__(self, name, age, address):
+    def __init__(self, name: str, age: int, address: str):
         self._name = name
         self._age = age
         self._address = address
