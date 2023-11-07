@@ -6,7 +6,7 @@ from src.models.user_model import User
 
 class Account:
     def __init__(self, balance: Union[int, float], user: User):
-        self._account_id = uuid.uuid4()
+        self.account_id = uuid.uuid4()
         self._balance = balance
         self._customer = user
 
